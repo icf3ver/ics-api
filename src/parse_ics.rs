@@ -75,8 +75,11 @@ pub fn date_event(month: u8, day: u8, year: u16) -> String{
         .connect("")
         .to_string();
     println!("{:?}", time);
-    let result = map.get(&time)
-        .unwrap().clone().5
-        .unwrap();
-    return result;
+    if map.contains_key(&time){
+        let result = map.get(&time)
+            .unwrap().clone().5
+            .unwrap();
+        return result;
+    }
+    return "No Entry Found".to_string();
 }
