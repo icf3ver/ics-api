@@ -297,15 +297,6 @@ dependencies = [
 
 [[package]]
 name = "error-chain"
-version = "0.10.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d9435d864e017c3c6afeac1654189b06cdb491cf2ff73dbf0d73b0f292f42ff8"
-dependencies = [
- "backtrace",
-]
-
-[[package]]
-name = "error-chain"
 version = "0.12.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3ab49e9dcb602294bc42f9a7dfc9bc6e936fca4418ea300dbfb84fe16de0b7d9"
@@ -537,11 +528,11 @@ dependencies = [
 
 [[package]]
 name = "ical"
-version = "0.5.0"
+version = "0.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a985f921bf84e6d00286f0f41363e2d39978370d8d8868c114002d863c27094f"
+checksum = "c0e9337a9d901ffb92cf655e854c51734dc004287b959b47830a3308201f18c0"
 dependencies = [
- "error-chain 0.10.0",
+ "failure",
 ]
 
 [[package]]
@@ -915,7 +906,7 @@ version = "1.5.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3bbaa49075179162b49acac1c6aa45fb4dafb5f13cf6794276d77bc7fd95757b"
 dependencies = [
- "error-chain 0.12.1",
+ "error-chain",
  "idna 0.2.0",
  "lazy_static",
  "regex",
